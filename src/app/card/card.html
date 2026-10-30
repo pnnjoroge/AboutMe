@@ -1,0 +1,49 @@
+
+
+<div class="cardBody">
+        <h2>{{ title }}</h2>
+        <p>Over the course of this program, I have designed and developed the following
+            web applications:
+        </p>
+        <div class="grid-rows">
+        <div class="example-card">
+            <ul>
+                <li>{{ example1.name }} -
+                    {{ example1.description }} <br><br>
+                    {{ example1.skills }}
+                </li> <br>
+            </ul>
+            <img [src]="example1.imageUrl" alt="Website screenshot" width="250" height="250">
+            <br>
+            <a [href]="example1.linkUrl">See more</a>
+        </div>
+        <div class="example-card">
+            <ul>
+                <li>{{ example2.name }} - 
+                    {{ example2.description }} <br><br>
+                    {{ example2.skills }}
+                </li> <br>
+            </ul>
+            <img [src]="example2.imageUrl" alt="Website screenshot" width="250" height="250">
+            <br>
+            <a [href]="example2.linkUrl">See more</a>
+        </div>
+        <div class="example-card">
+            <ul>
+                <li>{{ example3.name }} - 
+                    {{ example3.description }} <br><br>
+                    {{ example3.skills }}
+                </li> <br>
+            </ul>
+            <img [src]="example3.imageUrl" alt="Website screenshot" width="250" height="250">
+            <br>
+            <a href="">See more</a>
+        </div>
+        <div class="scrollButton" [style.display]="isVisible() ? 'block' : 'none'">
+            <button (click)="scrollToTop()">Scroll to Top</button>
+        </div>
+        <div class="date">
+            <p>Current Date: {{ currentDate | date }}</p>
+        </div>
+    </div>  
+</div>
