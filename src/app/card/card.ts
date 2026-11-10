@@ -8,26 +8,26 @@ import { DatePipe} from "@angular/common";
 })
 export class Card {
   @Input() title: string ='Projects Portfolio'
-  
+
   example1: Project = {
+    name: 'Megan Thee Stallion Music Album Browser',
+    description: 'An application with card components, dynamic album detail pages, and route redirection. Deployed on Vercel.',
+    skills: 'Technologies used: Angular, TypeScript, HTML, CSS',
+    imageUrl: "images/MeganTheeStallion.png",
+    linkUrl: "https://megantheestallionmusiclibrary.vercel.app/"
+  };
+  
+  example2: Project = {
     name: 'MoneyMatters',
-    description: 'A multi-page financial literacy web application.',
-    skills: 'Technologies used: HTML, CSS, JS',
+    description: 'A simple multi-page static financial literacy web application. Deployed it on GitHub Pages.',
+    skills: 'Technologies used: HTML, CSS',
     imageUrl: "images/Moneymatters.png",
     linkUrl: "https://pnnjoroge.github.io/MoneyMatters/"
   };
 
-  example2: Project = {
-    name: 'Favorite Cakes',
-    description: 'A single-page passion project web application about cakes.',
-    skills: 'Technologies used: HTML, CSS',
-    imageUrl: "images/Favoritecakes.png",
-    linkUrl: "https://pnnjoroge.github.io/Favorite-Cakes--One-page-Website-Portfolio/"
-  };
-
   example3: Project = {
     name: 'AboutMe',
-    description: 'A single-page introduction and portfolio-showcasing web application.',
+    description: 'Responsive single-page Angular and TypeScript portfolio site with project cards, deployed on Vercel.',
     skills: 'Technologies used: HTML, CSS, JS, TypeScript, Angular',
     imageUrl: "images/Aboutme.png",
     linkUrl: ""

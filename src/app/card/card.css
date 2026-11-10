@@ -54,10 +54,10 @@ p, ul, li {
 .grid-rows {
     color: whitesmoke;
     margin: 1rem 5rem auto; 
-    width: min(90%, 75rem);
+    width: min(90%, 80rem);
     display: grid;
     grid-auto-flow: column;
-    gap: 1em; 
+    gap: 2em;
 }
 .grid-rows >*{
     border: 2px solid transparent; 
@@ -81,13 +81,15 @@ p, ul, li {
     border-radius: 4px;
     font-size: 1rem;
     padding: 0.5rem 1.5em;
-    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: whitesmoke
 }
 
+.grid-rows img {
+  margin-top: 1rem;
+}
 .grid-rows a:hover, button:hover {
   opacity: 0.9;
   color: whitesmoke;
